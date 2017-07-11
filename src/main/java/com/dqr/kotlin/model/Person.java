@@ -1,4 +1,4 @@
-package com.dqr.model;
+package com.dqr.kotlin.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,10 +6,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
+ * Person model.
+ * 
  * Created by dqromney on 7/11/17.
  */
 @Entity
-public class Foo {
+public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,25 +19,26 @@ public class Foo {
 
     private String name;
 
-    public Foo() {
+    public Person() {
         super();
     }
 
-    public Foo(final String name) {
+    public Person(final String name) {
         super();
 
         this.name = name;
     }
 
-    public Foo(final long id, final String name) {
+    public Person(final long id, final String name) {
         super();
 
         this.id = id;
         this.name = name;
     }
 
+    // -----------------------------------------------------------------------------------------------------------------
     // API
-
+    // -----------------------------------------------------------------------------------------------------------------
     public String getName() {
         return name;
     }
@@ -52,8 +55,9 @@ public class Foo {
         this.name = name;
     }
 
-    //
-
+    // -----------------------------------------------------------------------------------------------------------------
+    // Helpers
+    // -----------------------------------------------------------------------------------------------------------------
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -70,7 +74,7 @@ public class Foo {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Foo other = (Foo) obj;
+        Person other = (Person) obj;
         if (name == null) {
             if (other.name != null)
                 return false;
@@ -81,7 +85,7 @@ public class Foo {
 
     @Override
     public String toString() {
-        return "Foo [name=" + name + "]";
+        return "Person [name=" + name + "]";
     }
 
 }

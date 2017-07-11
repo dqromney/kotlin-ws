@@ -1,4 +1,4 @@
-package com.dqr;
+package com.dqr.kotlin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

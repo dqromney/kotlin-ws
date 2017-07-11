@@ -1,5 +1,7 @@
-package com.dqr.springbootkotlin
+package com.dqr.kotlin.springbootkotlin
 
+import com.dqr.kotlin.KotlinDemoApplication
+import com.dqr.kotlin.dto.HelloDto
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Test

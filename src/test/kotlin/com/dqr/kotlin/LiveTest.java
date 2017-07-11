@@ -1,4 +1,4 @@
-package com.dqr;
+package com.dqr.kotlin;
 
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.Response;

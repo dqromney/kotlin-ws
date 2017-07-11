@@ -1,4 +1,4 @@
-package com.dqr;
+package com.dqr.kotlin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

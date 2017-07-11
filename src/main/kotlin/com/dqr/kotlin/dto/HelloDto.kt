@@ -1,4 +1,4 @@
-package com.dqr.springbootkotlin
+package com.dqr.kotlin.dto
 
 /**
  * Created by dqromney on 7/11/17.

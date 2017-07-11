@@ -1,6 +1,6 @@
-package com.dqr.persistence;
+package com.dqr.kotlin.persistence;
 
-import com.dqr.model.Foo;
+import com.dqr.kotlin.model.Person;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -13,13 +13,11 @@ import static org.apache.commons.lang3.RandomStringUtils.randomAlphabetic;
 public class DataSetupBean implements InitializingBean {
 
     @Autowired
-    private FooRepository repo;
-
-    //
+    private PersonRepository repo;
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        IntStream.range(1, 5).forEach(i -> repo.save(new Foo(randomAlphabetic(8))));
+        IntStream.range(1, 5).forEach(i -> repo.save(new Person(randomAlphabetic(8))));
     }
 
 }
