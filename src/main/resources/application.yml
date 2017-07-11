@@ -1,25 +1,11 @@
-logging:
-  file: "./logs/${com.dqr.kotlin-ws}.log"
-  level:
-    org: WARN
-    com.dqr.kotlin-ws: INFO
-
 server:
-  port: 8080
+  port: "8081"
 
-endpoints:
-  configprops:
-    keys-to-sanitize: password,secret,key,token,vcap_services
-  env:
-    keys-to-sanitize: password,secret,key,token,vcap_services
+security:
+  user:
+    name: "user"
+    password: "pass"
 
-spring:
-  profiles:
-    active: local # Default to the local profile when none is supplied
-
-dqr:
-  api-path: /my-kotlin-ws/v1
-
-  datasources:
-    my-kotlin-ws-ds:
-      driverClassName: org.h2.Driver
+logging:
+  level:
+    root: "INFO"
