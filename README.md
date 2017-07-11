@@ -14,6 +14,7 @@ Web Service using Kotlin and Java and Spring Boot.
     - http://localhost:8081/hello
     - http://localhost:8081/hello-service
     - http://localhost:8081/hello-dto
+      - {"greeting":"Hello from the dto"}
     
 You can either run the mvn spring-boot:run or run the Spring5Application.java, or the KotlinDemoApplication.kt by right-mouse click on either name and select run. 
 
