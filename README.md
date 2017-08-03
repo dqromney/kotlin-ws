@@ -16,7 +16,7 @@ Web Service using Kotlin and Java and Spring Boot.
     - http://localhost:8081/hello-dto
       - {"greeting":"Hello from the dto"}
     
-You can either run the mvn spring-boot:run or run the Spring5Application.java, or the KotlinDemoApplication.kt by right-mouse click on either name and select run. 
+You can either run the `mvn spring-boot:run` or run the Spring5Application.java, or the `KotlinDemoApplication.kt` by right-mouse click on either name and select run. 
 
 This is a simple application was created to help me learn and understand how Kotlin works with Spring Boot for my STG CDP. 
 
